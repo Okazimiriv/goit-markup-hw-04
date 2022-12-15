@@ -509,8 +509,11 @@ body {
   background-color: var(--dark-bg-color);
   padding-top: 100px;
   padding-bottom: 100px;
+  /* padding-left: 0; */
   display: flex;
-  margin: 0;
+}
+.holder {
+  display: flex;
 }
 
 .logo-white {
@@ -520,6 +523,7 @@ body {
 .footer p {
   margin-bottom: 16px;
   margin-top: 0;
+  display: inline-block;
 }
 
 .footer .text {
@@ -534,15 +538,16 @@ body {
   margin: 0;
 }
 
-.footer .logo {
-  margin-left: auto;
-  padding-left: 0;
+.footer-logo {
+  margin-right: 120px;
   width: 264px;
+  outline: 1px solid #ffffff;
 }
 
-.footer .social {
+.social {
   width: 208px;
-  display: flex;
+  /* display: flex; */
+  outline: 1px solid #ffffff;
 }
 
 .soc-title {
@@ -553,9 +558,14 @@ body {
   letter-spacing: 0.02em;
 
   color: var(--basik-light-color);
+  margin-top: 0;
 }
 
-.footer .section {
+.footer-soc-list {
+  display: flex;
+}
+
+/* .footer .section {
   display: flex;
   justify-content: flex-start;
-}
+} */
