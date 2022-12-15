@@ -4,6 +4,7 @@
   --dark-bg-color: #2e2f42;
   --light-bg-color: #f4f4fd;
   --basik-light-color: #ffffff;
+  --light-slate: #8e8f99;
   --gap24: 24px;
 }
 
@@ -389,19 +390,33 @@ body {
   width: 168px;
   height: 88px;
   border-radius: 4px;
-  border: 1px solid #8e8f99;
-  /* content: '';
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 64px; */
-
-  /* padding-top: 16px;
-  padding-left: 32px; */
+  border: 1px solid var(--light-slate);
+  padding: 16px 32px;
 }
 
 .clients-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 104px;
+  height: 56px;
 }
+
 .clients-icon {
+  fill: var(--light-slate);
+}
+
+.clients-list:hover,
+.clients-list:focus {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.clients-list:active {
+  border: 3px solid var(--accent-color);
+}
+
+.clients-list:active .clients-icon {
+  fill: var(--accent-color);
 }
 
 /* _____filters_____  */
@@ -437,6 +452,8 @@ body {
 .button-filters:focus {
   background-color: var(--accent-color);
   color: var(--basik-light-color);
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 3px 1px rgba(0, 0, 0, 0.01);
 }
 
 .button-filters:active {
@@ -492,6 +509,8 @@ body {
   background-color: var(--dark-bg-color);
   padding-top: 100px;
   padding-bottom: 100px;
+  display: flex;
+  margin: 0;
 }
 
 .logo-white {
@@ -516,6 +535,27 @@ body {
 }
 
 .footer .logo {
-  margin-right: 0;
-  padding: 0;
+  margin-left: auto;
+  padding-left: 0;
+  width: 264px;
+}
+
+.footer .social {
+  width: 208px;
+  display: flex;
+}
+
+.soc-title {
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+
+  color: var(--basik-light-color);
+}
+
+.footer .section {
+  display: flex;
+  justify-content: flex-start;
 }
