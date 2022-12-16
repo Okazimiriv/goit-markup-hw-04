@@ -5,6 +5,7 @@
   --light-bg-color: #f4f4fd;
   --basik-light-color: #ffffff;
   --light-slate: #8e8f99;
+  --success: #31d0aa;
   --gap24: 24px;
 }
 
@@ -541,13 +542,10 @@ body {
 .footer-logo {
   margin-right: 120px;
   width: 264px;
-  outline: 1px solid #ffffff;
 }
 
 .social {
   width: 208px;
-  /* display: flex; */
-  outline: 1px solid #ffffff;
 }
 
 .soc-title {
@@ -559,13 +557,20 @@ body {
 
   color: var(--basik-light-color);
   margin-top: 0;
+  margin-bottom: 0;
 }
 
 .footer-soc-list {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 16px;
 }
 
-/* .footer .section {
-  display: flex;
-  justify-content: flex-start;
-} */
+.footer .team-soc-link {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer .team-soc-link:hover {
+  background-color: var(--success);
+}
